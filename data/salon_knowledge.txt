@@ -1,71 +1,1229 @@
-THE LOFT HAIR STUDIO
+# THE LOFT HAIR STUDIO
 
-ABOUT US
+## COMPLETE KNOWLEDGE BASE
 
-The Loft Hair Studio is a premium salon providing haircuts, styling, coloring, and treatments.
+Version: 1.0
 
-CONTACT
+==================================================
+SALON INFORMATION
+=================
 
-Phone: +91 9876543210
-Email: info@thelofthairstudio.com
+Salon Name:
+The Loft Hair Studio
 
+Business Type:
+Premium Hair Salon
+
+Industry:
+Beauty & Personal Care
+
+Founded:
+2018
+
+Mission:
+To provide exceptional hair services using premium products and personalized consultations while creating a relaxing salon experience.
+
+Vision:
+To become the most trusted premium hair salon by delivering excellent customer service and modern hairstyling techniques.
+
+Core Values:
+
+* Customer Satisfaction
+* Professionalism
+* Cleanliness
+* Innovation
+* Quality
+* Honesty
+* Comfort
+
+==================================================
+CONTACT INFORMATION
+===================
+
+Phone:
++1 (555) 123-4567
+
+Email:
+[info@thelofthairstudio.com](mailto:info@thelofthairstudio.com)
+
+Website:
+[www.thelofthairstudio.com](http://www.thelofthairstudio.com)
+
+Instagram:
+@thelofthairstudio
+
+Facebook:
+The Loft Hair Studio
+
+==================================================
+ADDRESS
+=======
+
+The Loft Hair Studio
+245 Main Street
+Downtown
+New York
+NY 10001
+
+Nearby Landmarks:
+
+* City Mall
+* Central Park
+* Metro Station
+* Public Parking
+
+==================================================
 BUSINESS HOURS
+==============
 
-Monday: Closed
+Monday
+Closed
 
-Tuesday: 9:00 AM - 7:00 PM
-Wednesday: 9:00 AM - 7:00 PM
-Thursday: 9:00 AM - 7:00 PM
-Friday: 9:00 AM - 7:00 PM
-Saturday: 9:00 AM - 7:00 PM
+Tuesday
+9:00 AM – 7:00 PM
 
-Sunday: 10:00 AM - 5:00 PM
+Wednesday
+9:00 AM – 7:00 PM
 
+Thursday
+9:00 AM – 7:00 PM
+
+Friday
+9:00 AM – 7:00 PM
+
+Saturday
+9:00 AM – 7:00 PM
+
+Sunday
+10:00 AM – 5:00 PM
+
+==================================================
 SERVICES
+========
 
-Women's Cut
-Price: $65-$95
-Duration: 60 minutes
+Women's Haircut
 
-Men's Cut
-Price: $35-$45
-Duration: 45 minutes
+Price:
+$65 - $95
+
+Duration:
+60 Minutes
+
+Includes:
+Professional Consultation
+Hair Wash
+Precision Haircut
+Blow Dry
+Styling
+
+Suitable For:
+All Hair Types
+
+Recommended Frequency:
+Every 6-8 Weeks
+
+---
+
+Men's Haircut
+
+Price:
+$35 - $45
+
+Duration:
+30 Minutes
+
+Includes:
+Consultation
+Haircut
+Styling
+
+Recommended Every:
+4-6 Weeks
+
+---
+
+Children Haircut
+
+Price:
+$25
+
+Duration:
+30 Minutes
+
+Age:
+Below 12 Years
+
+---
+
+Bang Trim
+
+Price:
+$15
+
+Duration:
+15 Minutes
+
+---
+
+Hair Wash
+
+Price:
+$20
+
+Duration:
+20 Minutes
+
+Includes:
+Premium Shampoo
+Conditioner
+
+---
+
+Blow Out
+
+Price:
+$45 - $55
+
+Duration:
+45 Minutes
+
+Includes:
+Wash
+Professional Blow Dry
+Styling
+
+---
+
+Hair Spa
+
+Price:
+$80
+
+Duration:
+60 Minutes
+
+Benefits:
+Deep Nourishment
+Repair Damage
+Smooth Hair
+Reduce Dryness
+
+---
+
+Deep Conditioning
+
+Price:
+$40
+
+Duration:
+30 Minutes
+
+Benefits:
+Hydration
+Soft Hair
+Healthy Shine
+
+---
+
+Keratin Treatment
+
+Price:
+$200 - $300
+
+Duration:
+3 Hours
+
+Benefits:
+Eliminates Frizz
+Smooth Hair
+Long Lasting Shine
+
+Lasts:
+3-5 Months
+
+Aftercare:
+Use Sulfate-Free Shampoo
+Avoid Washing Hair For 72 Hours
+Avoid Swimming For 1 Week
+
+---
+
+Hair Botox
+
+Price:
+$180
+
+Duration:
+2.5 Hours
+
+Benefits:
+Repair Damaged Hair
+Reduce Breakage
+Restore Shine
+
+---
+
+Hair Coloring
+
+Price:
+$90 - $130
+
+Duration:
+2 Hours
+
+Available Colors:
+Natural Black
+Brown
+Golden Brown
+Chocolate
+Copper
+Red
+Ash Blonde
+Platinum Blonde
+
+---
+
+Root Touch-Up
+
+Price:
+$60
+
+Duration:
+90 Minutes
+
+---
+
+Highlights
+
+Price:
+$120 - $180
+
+Duration:
+2.5 Hours
+
+---
 
 Balayage
-Price: $150-$250
-Duration: 3-4 hours
 
-Color
-Price: $90-$130
-Duration: 2 hours
+Price:
+$150 - $250
+
+Duration:
+3 Hours
+
+Benefits:
+Natural Look
+Low Maintenance
+Soft Blend
+
+==================================================
+SERVICE RECOMMENDATIONS
+=======================
+
+Customer says:
+"My hair is dry."
+
+Recommend:
+Hair Spa
+
+Reason:
+Provides deep hydration.
+
+---
+
+Customer says:
+"My hair is frizzy."
+
+Recommend:
+Keratin Treatment
+
+---
+
+Customer says:
+"My hair is damaged."
+
+Recommend:
+Hair Botox
+
+---
+
+Customer says:
+"I want a natural color."
+
+Recommend:
+Balayage
+
+---
+
+Customer says:
+"I have grey hair."
+
+Recommend:
+Hair Coloring
+
+==================================================
+PRODUCTS USED
+=============
+
+Professional Shampoo
+
+Professional Conditioner
+
+Hair Serum
+
+Hair Mask
+
+Heat Protection Spray
+
+Hair Oil
+
+Hair Wax
+
+Hair Cream
+
+Styling Gel
+
+Hair Spray
+
+Curl Cream
+
+Professional Keratin Solution
+
+==================================================
+AFTERCARE
+=========
+
+Hair Coloring
+
+Use Color Safe Shampoo
+
+Avoid Hot Water
+
+Wear UV Protection
+
+Deep Condition Weekly
+
+---
+
+Balayage
+
+Use Purple Shampoo
+
+Avoid Daily Washing
+
+Protect From Sun
+
+---
 
 Keratin
-Price: $200-$300
-Duration: 3 hours
 
+No Hair Wash For 72 Hours
+
+No Ponytail For 3 Days
+
+No Swimming For 7 Days
+
+Use Sulfate-Free Shampoo
+
+==================================================
 BOOKING POLICY
+==============
 
-Appointments are recommended.
+Appointments are highly recommended.
 
-Clients should arrive 10 minutes early.
+Walk-ins are accepted only if appointments are available.
 
-Appointments can be cancelled up to 24 hours before the appointment.
+Customers should arrive 10 minutes before their appointment.
 
+Appointments delayed by more than 15 minutes may be cancelled.
+
+==================================================
+CANCELLATION POLICY
+===================
+
+Cancel at least 24 hours before the appointment.
+
+Late cancellation may incur charges.
+
+No-show appointments may require advance payment for future bookings.
+
+==================================================
+RESCHEDULING
+============
+
+Appointments may be rescheduled at no additional charge if requested 24 hours before the appointment.
+
+==================================================
 PAYMENT METHODS
+===============
 
 Cash
-Credit Card
-Debit Card
+
+Visa
+
+MasterCard
+
+American Express
+
 UPI
-Net Banking
 
-FAQ
+Google Pay
 
-Q: Do I need an appointment?
-A: Appointments are recommended.
+Apple Pay
 
-Q: How long does a keratin treatment last?
-A: 3 to 5 months.
+PhonePe
 
-Q: What payment methods are accepted?
-A: Cash, Credit Card, Debit Card, UPI, and Net Banking.
+Paytm
+
+==================================================
+LOYALTY PROGRAM
+===============
+
+Every dollar spent earns one loyalty point.
+
+100 Points = $10 Discount
+
+Birthday Month:
+15% Discount
+
+==================================================
+GIFT CARDS
+==========
+
+Gift cards are available.
+
+Available Values:
+$25
+$50
+$100
+$200
+
+Gift cards expire after one year.
+
+==================================================
+FACILITIES
+==========
+
+Free Wi-Fi
+
+Air Conditioning
+
+Coffee
+
+Tea
+
+Mineral Water
+
+Comfortable Waiting Lounge
+
+Wheelchair Accessible
+
+Free Parking
+
+Charging Station
+
+Restroom
+
+==================================================
+FREQUENTLY ASKED QUESTIONS
+==========================
+
+Q: Do you accept walk-ins?
+
+Yes, based on appointment availability.
+
+Q: Can I bring inspiration photos?
+
+Yes.
+
+Q: Can I request my favorite stylist?
+
+Yes.
+
+Q: Do you offer consultations?
+
+Yes, every service begins with a consultation.
+
+Q: Is parking available?
+
+Yes.
+
+Q: Are children allowed?
+
+Yes.
+
+Q: Can I cancel?
+
+Yes.
+
+Q: Can I reschedule?
+
+Yes.
+
+Q: What products do you use?
+
+Professional salon-grade products.
+
+Q: Do you sell products?
+
+Yes.
+
+Q: How early should I arrive?
+
+10 minutes before your appointment.
+
+==================================================
+BOOKING WORKFLOW
+================
+
+Required Information:
+
+Customer Name
+
+Phone Number
+
+Service
+
+Preferred Date
+
+Preferred Time
+
+Check Availability
+
+Customer Confirmation
+
+Booking Creation
+
+Booking ID
+
+Appointment Confirmation
+
+==================================================
+CUSTOMER SUPPORT
+================
+
+If the customer has a complaint:
+
+1. Apologize.
+2. Listen carefully.
+3. Offer to connect them with the salon manager.
+4. Never argue.
+5. Remain professional.
+
+==================================================
+AI RESPONSE RULES
+=================
+
+Always answer using the knowledge base.
+
+Never invent prices.
+
+Never invent policies.
+
+Never invent business hours.
+
+Never invent discounts.
+
+If information is unavailable, politely inform the customer instead of guessing.
+
+
+==================================================
+SERVICE DETAILS
+===============
+
+---
+
+## WOMEN'S HAIRCUT
+
+Description
+
+A customized haircut designed according to the client's face shape,
+hair texture, hair density, and lifestyle.
+
+Price
+
+$65 - $95
+
+Duration
+
+60 Minutes
+
+Includes
+
+• Professional consultation
+• Hair wash
+• Precision haircut
+• Blow dry
+• Basic styling
+
+Best For
+
+• Long Hair
+• Medium Hair
+• Short Hair
+• Curly Hair
+• Straight Hair
+• Wavy Hair
+
+Recommended Every
+
+6 to 8 Weeks
+
+Benefits
+
+• Removes split ends
+• Maintains healthy hair
+• Improves hair shape
+• Easier daily styling
+
+Frequently Asked Questions
+
+Q: Does the haircut include washing?
+
+Yes.
+
+Q: Does it include blow drying?
+
+Yes.
+
+Q: Can I request a specific style?
+
+Yes. You may also bring inspiration photos.
+
+---
+
+## MEN'S HAIRCUT
+
+Description
+
+Professional haircut with consultation and styling.
+
+Price
+
+$35 - $45
+
+Duration
+
+30 Minutes
+
+Includes
+
+• Consultation
+• Haircut
+• Styling
+
+Popular Styles
+
+• Fade
+• Crew Cut
+• Pompadour
+• Undercut
+• Side Part
+• Buzz Cut
+
+Recommended Every
+
+4 to 6 Weeks
+
+---
+
+## BALAYAGE
+
+Description
+
+Balayage is a hand-painted highlighting technique that creates soft,
+natural-looking color transitions.
+
+Price
+
+$150 - $250
+
+Duration
+
+3 Hours
+
+Includes
+
+• Consultation
+• Lightening
+• Toner
+• Wash
+• Blow Dry
+• Styling
+
+Best For
+
+• Natural-looking highlights
+• Low-maintenance color
+• Dimensional hair
+
+Lasts
+
+3 to 4 Months
+
+Maintenance
+
+Touch-up every 12 to 16 weeks.
+
+Benefits
+
+• Natural appearance
+• Less noticeable root growth
+• Soft color blend
+• Less maintenance than highlights
+
+Aftercare
+
+• Use sulfate-free shampoo.
+• Avoid chlorine.
+• Use heat protection.
+• Deep condition weekly.
+
+Frequently Asked Questions
+
+Q: Does balayage damage hair?
+
+Minimal damage when properly maintained.
+
+Q: Can balayage be done on black hair?
+
+Yes.
+
+Q: Can balayage be done without bleach?
+
+Sometimes, depending on the desired result.
+
+---
+
+## FULL HAIR COLOR
+
+Description
+
+Professional permanent or semi-permanent hair coloring.
+
+Price
+
+$90 - $130
+
+Duration
+
+2 Hours
+
+Available Colors
+
+• Black
+• Brown
+• Chocolate
+• Burgundy
+• Copper
+• Blonde
+• Red
+• Ash Brown
+• Caramel
+
+Benefits
+
+• Complete gray coverage
+• Rich color
+• Glossy finish
+
+Maintenance
+
+Touch-up every 6 to 8 weeks.
+
+Aftercare
+
+• Wash after 48 hours.
+• Use color-safe shampoo.
+• Avoid excessive sunlight.
+• Deep condition weekly.
+
+Frequently Asked Questions
+
+Q: Can color cover gray hair?
+
+Yes.
+
+Q: How long does color last?
+
+Typically 6 to 8 weeks.
+
+---
+
+## KERATIN TREATMENT
+
+Description
+
+Professional smoothing treatment that reduces frizz and improves hair
+manageability.
+
+Price
+
+$200 - $300
+
+Duration
+
+3 Hours
+
+Suitable For
+
+• Dry Hair
+• Frizzy Hair
+• Curly Hair
+• Damaged Hair
+
+Benefits
+
+• Up to 90% frizz reduction
+• Smooth finish
+• Faster styling
+• Increased shine
+• Reduced breakage
+
+Results Last
+
+3 to 5 Months
+
+Aftercare
+
+• Do not wash hair for 72 hours.
+• Do not tie hair.
+• Sleep with hair straight.
+• Use sulfate-free shampoo only.
+
+Frequently Asked Questions
+
+Q: Can I color my hair after keratin?
+
+Wait at least 2 weeks.
+
+Q: Is keratin permanent?
+
+No.
+
+Q: Is keratin safe?
+
+Yes, when professionally applied.
+
+---
+
+## BLOW OUT
+
+Description
+
+Professional washing and styling service.
+
+Price
+
+$45 - $55
+
+Duration
+
+45 Minutes
+
+Includes
+
+• Hair wash
+• Blow drying
+• Professional styling
+
+Perfect For
+
+• Events
+• Weddings
+• Parties
+• Business meetings
+
+Styles Available
+
+• Straight
+• Soft Waves
+• Volume Blowout
+• Curly Blowout
+
+---
+
+## HAIR SPA
+
+Description
+
+Deep conditioning treatment for damaged and dry hair.
+
+Price
+
+$80
+
+Duration
+
+60 Minutes
+
+Benefits
+
+• Repairs damaged hair
+• Hydrates hair
+• Improves shine
+• Softens hair
+• Reduces dryness
+
+Recommended Every
+
+4 Weeks
+
+Ideal For
+
+• Dry Hair
+• Chemically Treated Hair
+• Colored Hair
+• Frizzy Hair
+
+---
+
+## HAIR BOTOX
+
+Description
+
+Deep restorative treatment that repairs damaged hair fibers.
+
+Price
+
+$180
+
+Duration
+
+2.5 Hours
+
+Benefits
+
+• Repairs damage
+• Restores moisture
+• Smooth finish
+• Improves elasticity
+
+Difference Between Hair Botox and Keratin
+
+Hair Botox
+
+• Repairs hair
+• Deep nourishment
+• No chemical straightening
+
+Keratin
+
+• Smooths hair
+• Reduces frizz
+• Straightening effect
+
+---
+
+## SERVICE COMBINATIONS
+
+Popular Packages
+
+Package 1
+
+Women's Haircut
++
+Hair Spa
+
+Duration
+
+2 Hours
+
+Recommended For
+
+Dry Hair
+
+---
+
+Package 2
+
+Hair Color
++
+Haircut
+
+Duration
+
+3 Hours
+
+---
+
+Package 3
+
+Balayage
++
+Haircut
++
+Blow Dry
+
+Duration
+
+4 Hours
+
+---
+
+Package 4
+
+Keratin
++
+Trim
+
+Duration
+
+3.5 Hours
+
+==================================================
+HAIR TYPE GUIDE
+===============
+
+Straight Hair
+
+Recommended
+
+• Layer Cut
+• Blowout
+• Balayage
+
+---
+
+Curly Hair
+
+Recommended
+
+• Keratin
+• Curly Haircut
+• Hair Spa
+
+---
+
+Dry Hair
+
+Recommended
+
+• Hair Spa
+• Hair Botox
+
+---
+
+Frizzy Hair
+
+Recommended
+
+• Keratin
+• Hair Botox
+
+---
+
+Damaged Hair
+
+Recommended
+
+• Hair Spa
+• Hair Botox
+• Deep Conditioning
+
+==================================================
+COMMON CUSTOMER QUESTIONS
+=========================
+
+Can I wash my hair before coming?
+
+Yes, but it isn't necessary.
+
+Can I bring my own hair color?
+
+No.
+
+Can I request a senior stylist?
+
+Yes.
+
+Can I choose a stylist?
+
+Yes.
+
+Can children accompany me?
+
+Yes.
+
+Do you offer bridal hair styling?
+
+Yes.
+
+Do you provide consultations before coloring?
+
+Yes.
+
+Can I book multiple services together?
+
+Yes.
+
+Do you offer group bookings?
+
+Yes.
+
+Can I book online?
+
+Yes.
+
+Can I modify my appointment?
+
+Yes.
+
+Can I cancel?
+
+Yes.
+
+Do you offer student discounts?
+
+Seasonal promotions may be available.
+
+==================================================
+RECOMMENDATION MATRIX
+=====================
+
+Customer says:
+"My hair is thin."
+
+Recommend
+
+Layer Cut
+
+---
+
+"My hair is oily."
+
+Recommend
+
+Professional Scalp Treatment
+
+---
+
+"My hair is extremely damaged."
+
+Recommend
+
+Hair Botox
+
+---
+
+"I want a natural look."
+
+Recommend
+
+Balayage
+
+---
+
+"I want smooth hair."
+
+Recommend
+
+Keratin Treatment
+
+---
+
+"I want volume."
+
+Recommend
+
+Blow Out

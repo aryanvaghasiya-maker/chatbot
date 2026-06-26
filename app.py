@@ -4,7 +4,6 @@ from contextlib import asynccontextmanager
 from dependencies.llm import Agent
 from agent.state import chatrequest
 from langgraph.checkpoint.redis.aio import AsyncRedisSaver
-from langgraph.store.redis.aio import AsyncRedisStore
 from decouple import config
 
 graph = None

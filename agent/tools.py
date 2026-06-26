@@ -3,7 +3,7 @@ from pydantic import BaseModel, Field
 from typing import Optional
 import re
 from datetime import datetime
-from agent.vectorstore import get_retriever
+from rag.vectorstore import retriever
 
 class Weather(BaseModel):
     location: str 
@@ -34,11 +34,7 @@ def weather_tool(location: str) -> str:
       ,args_schema=AvailabilityInput,
       description="check_availability")
 def check_availability(service: str,
-    preferred_datetime: str,
-    client_name: str = "",
-    client_phone: str = "",
-    booking_confirm: bool = False,
-    booking_id: int = 0)-> str:
+    preferred_datetime: str):
     """
     Check appointment availability.
     """
@@ -82,12 +78,13 @@ def create_booking(service:str,preferred_datetime: str,client_name: str,client_p
     Use for services, pricing, policies,
     opening hours and salon information.
     """)
+
 def rag_search(query: str) -> str:
     """Search salon knowledge base."""
     
-    retriever = get_retriever()
     docs = retriever.invoke(query)
 
     return "\n\n".join(
-        [doc.page_content for doc in docs]
+        doc.page_content
+        for doc in docs
     )
