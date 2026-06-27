@@ -1,4 +1,10 @@
 .env
 .env.*
 __pycache__/
-.venv/.env
+*.pyc
+.env
+.faiss/
+*.faiss
+*.pkl
+.vscode/
+.idea/
