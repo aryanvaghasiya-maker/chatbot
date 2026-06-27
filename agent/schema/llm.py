@@ -34,7 +34,6 @@ class ResumeAgent:
         async def _extract_skills(state): 
             return await self.extractor_instance.extract_skills_node(state)
 
-        # FIXED: Removed 'self.llm' to perfectly match the 2-argument signature (self, state)
         async def _optimize_resume(state): 
             return await self.optimizer_instance.optimize_resume_node(state)
 
