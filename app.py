@@ -5,11 +5,11 @@ from dependencies.llm import Agent
 from agent.state import chatrequest
 from langgraph.checkpoint.redis.aio import AsyncRedisSaver
 from decouple import config
-from database.chat_repository import (save_conversation,load_conversation)
+from database.chat_repository import (save_to_redis,save_redis_to_database)
 from database.chat_history import ChatSession
 from database.database import SessionLocal
-from uuid import UUID
-from fastapi import HTTPException
+import uvicorn
+
 
 graph = None
 checkpointer = None
@@ -61,38 +61,46 @@ async def root():
     }
 
 @app.post("/chat")
-async def chat(message: chatrequest, request: Request):
+async def chat(message: chatrequest):
 
-    result = await graph.ainvoke({
-        "messages":[HumanMessage(content=message.message)]},
-        config={"configurable": {"thread_id": message.session_id}
-    })
-    
-    save_conversation(
-        session_id=message.session_id,
-        messages=result["messages"],
-    )
+    result = await graph.ainvoke(
+        {"messages":[HumanMessage(content=message.message)]},config={"configurable":{"thread_id":message.session_id}})
+
+    ai_reply = result["messages"][-1].content
+    save_to_redis(message.session_id,"human",message.message,)
+    save_to_redis(message.session_id,"ai",ai_reply,)
+
     return {
-        "response": result["messages"][-1].content
+        "response": ai_reply
     }
-
 @app.get("/conversation/{session_id}")
 async def get_conversation(session_id: str):
 
-    history = load_conversation(session_id)
+    db = SessionLocal()
 
-    if not history:
-        raise HTTPException(status_code=404,detail="Conversation not found",)
-    conversation = []
+    chats = (
+        db.query(ChatSession).filter(ChatSession.session_id == session_id).order_by(ChatSession.id).all())
 
-    for msg in history:
-        if isinstance(msg, HumanMessage):
-            conversation.append({"role": "human","content": msg.content,})
+    db.close()
 
-        elif isinstance(msg, AIMessage):
-            conversation.append({"role": "ai","content": msg.content,})
+    history = []
+
+    for chat in chats:
+        if chat.human_mess:
+            history.append(HumanMessage(content=chat.human_mess))
+        if chat.ai_mess:
+            history.append(AIMessage(content=chat.ai_mess))
+
+    return history
+
+@app.post("/end-chat/{session_id}")
+async def end_chat(session_id: str):
+
+    save_redis_to_database(session_id)
 
     return {
-        "session_id": session_id,
-        "conversation": conversation,
+        "message": "Conversation saved successfully."
     }
+
+if __name__ == "__main__":
+    uvicorn.run("app:app", host="0.0.0.0", port=8000, reload=True)

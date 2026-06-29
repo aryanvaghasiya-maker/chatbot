@@ -6,11 +6,21 @@ from typing_extensions import TypedDict, Annotated
 from langgraph.graph.message import add_messages
 from pydantic import BaseModel, Field
 from dotenv import load_dotenv
-
+from fastapi import FastAPI
 load_dotenv()
+
+app = FastAPI()
+
+@app.get("/")
+async def root():
+    return{"message":"hello"}
 
 class Weather(BaseModel):
     location : str = Field()
+
+@app.get("/location/{location}")
+async def location(location: str):
+    return {"location": location}
 
 @tool("weather_tool", args_schema=Weather)
 def weather_tool(location: str) -> str:
@@ -25,7 +35,6 @@ llm_bind_tool = llm.bind_tools(tool_list)
 class AgentState(TypedDict):
     messages : Annotated[list[AnyMessage], add_messages]
 
-
 def agent_call(state: AgentState) -> dict:
     messages = state["messages"]
     chat_history = [SystemMessage(content="You are a helpful assistant tasked.")] + messages
@@ -33,7 +42,7 @@ def agent_call(state: AgentState) -> dict:
     result = llm_bind_tool.invoke(chat_history)
 
     if hasattr(result, "tool_calls") and result.tool_calls:
-        result.tool_calls = [weather_tool]
+        return "agent_call"
 
     return {
         "messages": [result],
