@@ -1,67 +1,99 @@
-from typing import Literal
 from decouple import config
 from langgraph.graph import StateGraph, START, END
-from langchain_openai import ChatOpenAI
+from agent.services.llm_factory import get_llm
 from langchain_community.tools import DuckDuckGoSearchRun
 
-from agent.node.check_optimization import check_optimization_quality, optimize_resume_node  
+from agent.node.check_optimization import check_optimization_quality, optimize_resume_node
 from agent.node.extract_skills import extract_skills_node
 from agent.node.evalute import evaluate_resume_node
 from agent.node.gap_analyzer import gap_analyzer_node
 from agent.node.suggestion import inject_suggestions_node
 from agent.node.placement import placement_discovery_node
-from agent.states.states import AdvancedAgentState
+from agent.node.resume_parser import resume_parser_node
+from agent.node.final_output import final_output_node
+from agent.node.career_content import career_content_node
+from agent.states.states import ResumeState
+
 
 class ResumeAgent:
     def __init__(self, max_loops: int = 3, target_score: int = 85):
         self.max_loops = max_loops
         self.target_score = target_score
 
-        self.llm = ChatOpenAI(model="gpt-3.5-turbo", api_key=config("OPENAI_API_KEY"))
+        self.llm = get_llm()
         self.search_tool = DuckDuckGoSearchRun()
-        
+
+        self.parser_instance = resume_parser_node(max_loops, target_score)
         self.extractor_instance = extract_skills_node(max_loops, target_score)
         self.optimizer_instance = optimize_resume_node(max_loops, target_score)
         self.evaluator_instance = evaluate_resume_node(max_loops, target_score)
         self.analyzer_instance = gap_analyzer_node(max_loops, target_score)
+        self.final_output_instance = final_output_node(max_loops, target_score)
         self.suggestion_instance = inject_suggestions_node(max_loops, target_score)
         self.discoverer_instance = placement_discovery_node(max_loops, target_score)
+        self.career_instance = career_content_node(max_loops, target_score)
         self.router_instance = check_optimization_quality(max_loops, target_score)
 
     def build_graph(self, checkpointer):
-        builder = StateGraph(AdvancedAgentState)
+        builder = StateGraph(ResumeState)
 
-        async def _extract_skills(state): 
+        # ---- Node wrappers --------------------------------------------------
+        async def _parse_resume(state):
+            return await self.parser_instance.parse_resume_node(state)
+
+        async def _extract_skills(state):
             return await self.extractor_instance.extract_skills_node(state)
 
-        async def _optimize_resume(state): 
+        async def _optimize_resume(state):
             return await self.optimizer_instance.optimize_resume_node(state)
 
-        async def _evaluate_resume(state): 
-            return await self.evaluator_instance.evaluate_resume_node(state, self.llm, self.target_score)
+        async def _evaluate_resume(state):
+            return await self.evaluator_instance.evaluate_resume_node(
+                state, self.llm, self.target_score
+            )
 
-        async def _gap_analysis(state): 
+        async def _gap_analysis(state):
             return await self.analyzer_instance.analyze_gaps_node(state, self.llm)
 
-        async def _inject_suggestions(state): 
+        async def _inject_suggestions(state):
             return await self.suggestion_instance.inject_suggestions_node(state, self.llm)
 
-        async def _discover_companies(state): 
-            return await self.discoverer_instance.placement_discovery_node(state, self.llm, self.search_tool)
+        async def _discover_companies(state):
+            return await self.discoverer_instance.placement_discovery_node(
+                state, self.llm, self.search_tool
+            )
 
+        async def _generate_career_content(state):
+            return await self.career_instance.generate_career_content(state, self.llm)
+
+        async def _generate_final_assets(state):
+            return await self.final_output_instance.generate_final_assets(state)
+
+        # ---- Register nodes -------------------------------------------------
+        builder.add_node("parse_resume", _parse_resume)
         builder.add_node("extract_skills", _extract_skills)
         builder.add_node("optimize_resume", _optimize_resume)
         builder.add_node("evaluate_resume", _evaluate_resume)
         builder.add_node("gap_analysis", _gap_analysis)
         builder.add_node("inject_suggestions", _inject_suggestions)
         builder.add_node("discover_companies", _discover_companies)
+        builder.add_node("generate_career_content", _generate_career_content)
+        builder.add_node("generate_final_assets", _generate_final_assets)
 
-        builder.add_edge(START, "extract_skills")
+        # ---- Edges ----------------------------------------------------------
+        builder.add_edge(START, "parse_resume")
+        builder.add_edge("parse_resume", "extract_skills")
         builder.add_edge("extract_skills", "optimize_resume")
         builder.add_edge("optimize_resume", "evaluate_resume")
+        # Conditional: loop back or proceed
+        builder.add_conditional_edges(
+            "evaluate_resume",
+            self.router_instance.check_optimization_quality,
+        )
         builder.add_edge("gap_analysis", "optimize_resume")
         builder.add_edge("inject_suggestions", "discover_companies")
-        builder.add_edge("discover_companies", END)
+        builder.add_edge("discover_companies", "generate_career_content")
+        builder.add_edge("generate_career_content", "generate_final_assets")
+        builder.add_edge("generate_final_assets", END)
 
-        builder.add_conditional_edges("evaluate_resume", self.router_instance.check_optimization_quality)
         return builder.compile(checkpointer=checkpointer)
