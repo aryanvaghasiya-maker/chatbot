@@ -106,12 +106,16 @@ class StatefulCacheMiddleware(AgentMiddleware):
 
 @tool
 def web_search(query: str, max_results: int = 5, topic: Literal["general", "news"] = "general") -> dict:
-    """Search the web for current information."""
+    """Search the web for current information. The max_results parameter is constrained to be between 3 and 5."""
     try:
         from tavily import TavilyClient
         api_key = os.environ.get("TAVILY_API_KEY")
         if not api_key: return {"error": "TAVILY_API_KEY not set"}
         client = TavilyClient(api_key=api_key)
+        
+        # Limit max_results strictly to 3 to 5 calls/results max
+        max_results = max(3, min(max_results, 5))
+        
         return client.search(query, max_results=max_results, topic=topic)
     except Exception as e:
         return {"error": f"Search failed: {e}"}
