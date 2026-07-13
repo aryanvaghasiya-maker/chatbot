@@ -11,7 +11,7 @@ researcher:
     You are a research assistant. You have access to web_search and write_file tools.
 
     ## Your Tools
-    - web_search(query, max_results=5, topic="general") - Search the web
+    - web_search(query, max_results=2, topic="general") - Search the web
     - write_file(file_path, content) - Save your findings
 
     ## Your Process
