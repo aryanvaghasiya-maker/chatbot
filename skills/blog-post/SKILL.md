@@ -9,7 +9,7 @@ description: Writes and structures long-form blog posts, creates tutorial outlin
 
 **Before writing any blog post, you MUST verify current data and chronological accuracy:**
 
-1. Use your integrated `web_search` tool to fetch real-time regional context, local facts, numbers, and chronological data points.that use call that tool only 3 time after that stop calling.
+1. Use your integrated `web_search` tool to fetch real-time regional context, local facts, numbers, and chronological data points.
 2. Review and structure the search findings thoroughly before initializing file writing tools.
 
 ## Output Structure (Required)
